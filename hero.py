@@ -1,6 +1,6 @@
 class SuperHero:
     people='people'
-    def __init__(self, name, nickname, superpower, health_points, catchphrase,fly=False):
+    def __init__(self, name, nickname, superpower, health_points, catchphrase,fly = False):
         self.name = name
         self.nickname = nickname
         self.superpower = superpower
@@ -19,8 +19,7 @@ class SuperHero:
     def __len__(self):
         return len(self.catchphrase)
 
-    def fly():
-        return "hh"    
+
 
 
 hero=SuperHero("Lana", "Magician", "Super_Jump", 100, "Give up villian")
@@ -34,11 +33,11 @@ class IceHero(SuperHero):
     icecontrol="Icecontrol-can control ice."
 
     def health(self):
-        self.fly=fly=True
         print("Здоровье: ",self.health_points ** 2)
 
     def fly_phrase(self):
-        print("fly in the True_phrase")
+        self.fly=True
+        print("fly in the True_phrase:", self.fly)
         
 
 ice_hero=IceHero("Articuno", "Ice bird", "Telepathy", 12, "Quuu")
@@ -51,11 +50,11 @@ print()
 class FireHero(SuperHero):
     firecontrol="Firecontrol-can control fire."
     def health(self):
-        self.fly=fly=True
         print("Здоровье: ",self.health_points ** 2)
 
     def fly_phrase(self):
-        print("fly in the True_phrase")
+        self.fly=True
+        print("fly in the True_phrase:",self.fly)
 
 fire_hero=FireHero("Moltres", "Fire bird", "Physic", 11, "Quu uu")
 print(fire_hero)
@@ -67,11 +66,11 @@ print()
 class ThunderHero(SuperHero):
     thundercontrol="Thundercontrol- can control thunder."
     def health(self):
-        self.fly=fly=True
         print("Здоровье: ",self.health_points ** 2)
 
     def fly_phrase(self):
-        print("fly in the True_phrase")
+        self.fly = True
+        print("fly in the True_phrase:",self.fly)
 
 thunder_hero=ThunderHero("Zapdos", "Thunder bird", "Agility", 10, "Quu Qu")
 print(fire_hero)
